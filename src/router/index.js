@@ -1,9 +1,10 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 
-import EditarCategoria from '..components/categorias/EditarCategoria.vue';
-import NewCategoria from '..components/categorias/NewCategoria.vue';
+import EditarCategoria from '../components/Categoria/EditarCategoria.vue';
+import NewCategoria from '../components/Categoria/NewCategoria.vue';
+
 import HomeView from '../views/HomeView.vue';
-import Categorias from '../views/Categorias.vue';
+import Categoria from '../views/Categorias.vue';
 
 const routes = [
   {
@@ -14,17 +15,17 @@ const routes = [
   {
     path: '/categorias',
     name: 'categorias',
-    component: Categorias
+    component: Categoria
   },
 
   {
-    path: '/editar-categoria/:id',
+    path: '/categorias/editar/:id',
     name: 'EditarCategoria',
     component: EditarCategoria 
   },
 
   {
-    path: '/add-categoria',
+    path: '/categorias/nueva',
     name: 'NewCategoria',
     component: NewCategoria
   },
