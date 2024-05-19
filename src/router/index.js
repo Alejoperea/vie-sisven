@@ -1,5 +1,9 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+
+import EditarCategoria from '..components/categorias/EditarCategoria.vue';
+import NewCategoria from '..components/categorias/NewCategoria.vue';
+import HomeView from '../views/HomeView.vue';
+import Categorias from '../views/Categorias.vue';
 
 const routes = [
   {
@@ -8,6 +12,24 @@ const routes = [
     component: HomeView
   },
   {
+    path: '/categorias',
+    name: 'categorias',
+    component: Categorias
+  },
+
+  {
+    path: '/editar-categoria/:id',
+    name: 'EditarCategoria',
+    component: EditarCategoria 
+  },
+
+  {
+    path: '/add-categoria',
+    name: 'NewCategoria',
+    component: NewCategoria
+  },
+
+  {
     path: '/about',
     name: 'about',
     // route level code-splitting
@@ -15,6 +37,7 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
   }
+
 ]
 
 const router = createRouter({
