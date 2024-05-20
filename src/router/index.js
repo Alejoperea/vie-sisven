@@ -9,10 +9,14 @@ import NewPaymode from '../components/Paymode/NewPaymode.vue';
 import EditarCustomer from '../components/Customer/EditarCustomer.vue';
 import NewCustomer from '../components/Customer/NewCustomer.vue';
 
+import EditarProducto from '../components/Producto/EditarProducto.vue';
+import NewProducto from '../components/Producto/NewProducto.vue';
+
 import HomeView from '../views/HomeView.vue';
 import Categoria from '../views/Categorias.vue';
 import Paymode from '../views/Paymodes.vue';
 import Customer from '../views/Customers.vue';
+import Producto from '../views/Productos.vue';
 
 const routes = [
   {
@@ -72,6 +76,24 @@ const routes = [
     path: '/customers/nueva',
     name: 'NewCustomer',
     component: NewCustomer
+  },
+
+  {
+    path: '/productos',
+    name: 'productos',
+    component: Producto
+  },
+
+  {
+    path: '/productos/editar/:id',
+    name: 'EditarProducto',
+    component: EditarProducto
+  },
+
+  {
+    path: '/productos/nueva',
+    name: 'NewProducto',
+    component: NewProducto
   },
 
   {

@@ -4,7 +4,9 @@
     <router-link to="/about">About</router-link>|
     <router-link to="/categorias">Categorias</router-link>|
     <router-link to="/paymodes">Paymode</router-link>|
-    <router-link to="/customers">Customer</router-link>
+    <router-link to="/customers">Customer</router-link>|
+    <router-link to="/productos">Producto</router-link>
+
   </nav>
   <router-view/>
 </template>
